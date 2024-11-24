@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Tejas Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        header {
+            background: url('hero.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        header .btn-container {
+            margin-top: 20px;
+        }
+
+        header .btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        header .btn:hover {
+            background-color: white;
+            color: rgb(0, 0, 33);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+        }
+
+        .buttons .btn {
+            padding: 12px;
+            background: #0a082f;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: rgb(170, 107, 228);
+        }
+
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 0;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            color: gray;
+            padding: 20px 40px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer>div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer ul li a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer ul li a:hover img {
+            filter: brightness(0.7);
+        }
+
+        .footer ul li img.icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+
+        .footer ul li a i {
+            margin-right: 8px;
+            font-size: 1rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .footer ul li a:hover i {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer-rights {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+
+        #typed {
+            color: rgb(170, 107, 228);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Tejas's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Hello! I'm <span class="purple">Tejas Kawde</span></h1>
+        <p id="typed"></p>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/tejas-kawde" target="_blank">
+                <button class="btn">LinkedIn</button>
+            </a>
+            <a href="https://github.com/tejask2212" target="_blank">
+                <button class="btn">Github</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1>About Me</h1>
+        <p>I’m Tejas Kawde, a final-year Computer Science and Engineering diploma student and currently pursuing a BTech
+            in CSE at MIT-WPU. I’m passionate about tech innovation and sustainability. With expertise in Java, Python,
+            XML, Flutter, and web development, I create user-friendly apps like CrimeFace, leveraging face recognition.
+            I’ve earned accolades like the INSPIRE award and was a runner-up at HACK MIT. As a leader, I successfully
+            organized Technophilia and am focused on exploring AI-driven real-world solutions. Let’s connect to make
+            tech smarter and more impactful!</p>
+        <hr>
+        <h1>Skills</h1>
+        <p>Python, Flutter, Application Development, XML, Java, C, C++, ML, HTML, CSS, Javascript</p>
+    </main> 
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Tejas's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/tejaskawde_2212" target="_blank" rel="noopener noreferrer">
+                            <img src="instagram.png" alt="Instagram" class="icon"> Instagram
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/tejas-kawde" target="_blank" rel="noopener noreferrer">
+                            <img src="linkedin.png" alt="LinkedIn" class="icon"> LinkedIn
+                        </a></li>
+                    <li><a href="https://github.com/tejask2212" target="_blank" rel="noopener noreferrer">
+                            <img src="github.png" alt="GitHub" class="icon"> GitHub
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Copyright &copy; 2024 Tejas Portfolio | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['a Computer Science Student', 'a Passionate Developer', 'a Problem Solver'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

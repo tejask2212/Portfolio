@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHq+2PQJbVcgqfIVcX8DAmD3D4Mll71pSYUqsPZ3P+ryJ8fTxLXbwClb6OsuC/jk6Cp+j7nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 75px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection .buttons {
+            padding: 35px 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+        }
+
+        .buttons .btn {
+            padding: 12px;
+            background: #0a082f;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px 0;
+            font-size: 2rem;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+            font-weight: 700;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 200px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            color: gray;
+            padding: 20px 40px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer>div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer ul li a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer ul li a:hover img {
+            filter: brightness(0.7);
+        }
+
+        .footer ul li img.icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+
+        .footer ul li a i {
+            margin-right: 8px;
+            font-size: 1rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .footer ul li a:hover i {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer-rights {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tejas's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hello! I'm <span class="purple">Tejas Kawde</span>,</div>
+                <div>a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/tejas-kawde" target="_blank">
+                        <button class="btn">LinkedIn</button>
+                    </a>
+                    <a href="https://github.com/tejask2212" target="_blank">
+                        <button class="btn">Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Developer working on a laptop">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Education Background</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="student.png" alt="">
+                    <div class="vertical-title">
+                        Samata International School
+                    </div>
+                    <div class="vertical-desc">
+                        Samata International School is where I completed my secondary education under the CBSE board,
+                        graduating with 93.4% in the 10th grade.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="student.png" alt="">
+                    <div class="vertical-title">
+                        V.N.Naik College
+                    </div>
+                    <div class="vertical-desc">
+                        I completed my higher secondary education at V.N. Naik College under the SSC board, graduating
+                        with 83.33% in the 12th grade.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="student.png" alt="">
+                    <div class="vertical-title">
+                        MIT World Peace University
+                    </div>
+                    <div class="vertical-desc">
+                        I am currently in the final year of my diploma in Computer Science and Engineering and pursuing
+                        an Integrated B.Tech degree in the same field at MIT WPU, with a current CGPA of 8.4.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Tejas's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/tejaskawde_2212" target="_blank" rel="noopener noreferrer">
+                            <img src="instagram.png" alt="Instagram" class="icon"> Instagram
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/tejas-kawde" target="_blank" rel="noopener noreferrer">
+                            <img src="linkedin.png" alt="LinkedIn" class="icon"> LinkedIn
+                        </a></li>
+                    <li><a href="https://github.com/tejask2212" target="_blank" rel="noopener noreferrer">
+                            <img src="github.png" alt="GitHub" class="icon"> GitHub
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Copyright &copy; 2024 Tejas Portfolio | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Problem Solver', 'Computer  Science Student'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

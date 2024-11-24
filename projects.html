@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Tejas Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px 40px;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .project {
+            background-color: rgb(18, 18, 62);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .project h2 {
+            font-size: 2rem;
+            color: rgb(170, 107, 228);
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .project .github {
+            display: inline-block;
+            background-color: rgb(170, 107, 228);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project .github:hover {
+            background-color: rgb(153, 153, 226);
+            transform: scale(1.05);
+        }
+
+
+        footer {
+            background-color: #0e0e1a;
+            color: gray;
+            padding: 20px 40px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer>div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: gray;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer ul li a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer ul li a:hover img {
+            filter: brightness(0.7);
+        }
+
+        .footer ul li img.icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+
+        .footer ul li a i {
+            margin-right: 8px;
+            font-size: 1rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .footer ul li a:hover i {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer-rights {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tejas's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <h2>Turfly</h2>
+                <p>Turfly is an innovative turf management app designed to simplify the process of booking. Users can
+                    effortlessly browse available turfs, check their availability, and make booking messages. Turfly
+                    ensures a seamless user experience with features like a personalized login system and a dedicated
+                    profile section. Perfect for sports enthusiasts and
+                    turf owners alike, it bridges convenience and accessibility for all turf-related needs.
+                </p>
+                <a href="https://github.com/tejask2212/Turfly" class="github" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h2>Kaun Banega Nakli Lakhpati</h2>
+                <p>Kaun Banega Nakli Lakhpati is a fun and interactive quiz app inspired by the popular game show, but
+                    with a twist—it’s all about virtual rewards and pure entertainment. The app features a series of
+                    multiple-choice questions across various difficulty levels. Players can test their knowledge, earn
+                    points for correct answers, and experience the thrill of the hot seat. With no real monetary stakes,
+                    it’s perfect for enjoying a lighthearted, competitive gaming experience with friends or family.</p>
+                <a href="https://github.com/tejask2212/KBNL" class="github" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h2>CrimeFace</h2>
+                <p>A cutting-edge face recognition app designed to enhance public safety. CrimeFace allows users to
+                    capture photos, compare facial features with a criminal database, and instantly retrieve matching
+                    profiles. Equipped with secure authentication and a streamlined interface, it simplifies data
+                    management and ensures accurate, reliable results for crime prevention efforts.
+                </p>
+            </div>
+            <div class="project">
+                <h2>NAIL</h2>
+                <p>NAIL - No Access Inhibitor Latch is an innovative traffic control system designed to enhance road
+                    safety by enforcing red light
+                    compliance. Using hydraulic mechanisms, this system prevents vehicles from breaking the signal when
+                    it turns red, halting movement until the light changes. NAIL aims to reduce traffic violations,
+                    improve traffic flow, and decrease accidents at intersections by ensuring vehicles cannot bypass red
+                    lights, even in cases of driver negligence or impatience.</p>
+            </div>
+            <div class="project">
+                <h2>PROBE</h2>
+                <p>PROBE - Proactive Real-Time Observation of Water’s Bio-Physical Environment is an advanced system for
+                    monitoring and analyzing water environments in real time. It
+                    collects critical bio-physical data, such as temperature, pH, oxygen levels, and other vital
+                    environmental parameters, to ensure sustainable water management. Designed for researchers,
+                    environmentalists, and water quality managers, PROBE helps in proactive decision-making to maintain
+                    water ecosystem health and prevent pollution.</p>
+            </div>
+            <div class="project">
+                <h2>Bus.io</h2>
+                <p>A console-based C program that implements a dynamic bus reservation system using a Binary Search Tree
+                    (BST) for managing customer information. The system supports features such as login, bus selection,
+                    ticket booking, seat availability check, reservation cancellation, and retrieval of reservation
+                    details. It also includes error handling, dynamic memory allocation, and a simple user interface
+                    with colored outputs to enhance user experience.</p>
+            </div>
+            <div class="project">
+                <h2>Tejas's Portfolio</h2>
+                <p>Welcome to Tejas's portfolio! This website showcases my projects, skills, and accomplishments as a
+                    Computer Science and Engineering student. From innovative app development to cutting-edge AI
+                    applications, my work reflects a passion for technology and problem-solving. Explore my journey and
+                    the solutions I've created to make a meaningful impact in the tech world.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Tejas's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/tejaskawde_2212" target="_blank" rel="noopener noreferrer">
+                            <img src="instagram.png" alt="Instagram" class="icon"> Instagram
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/tejas-kawde" target="_blank" rel="noopener noreferrer">
+                            <img src="linkedin.png" alt="LinkedIn" class="icon"> LinkedIn
+                        </a></li>
+                    <li><a href="https://github.com/tejask2212" target="_blank" rel="noopener noreferrer">
+                            <img src="github.png" alt="GitHub" class="icon"> GitHub
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>Copyright &copy; 2024 Tejas Portfolio | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
